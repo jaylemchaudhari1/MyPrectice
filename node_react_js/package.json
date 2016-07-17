@@ -1,0 +1,15 @@
+{
+  "name": "node_react_js",
+  "version": "1.0.0",
+  "description": "Test Node and React Js sample",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaylem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.1.0"
+  }
+}
