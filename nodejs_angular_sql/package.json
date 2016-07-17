@@ -1,0 +1,17 @@
+{
+  "name": "nodejs_angular_sql",
+  "version": "1.0.0",
+  "description": "Simple Todo Node js and angular application",
+  "main": "app.js",
+  "author": "Jaylem Chaudhari",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^7.0.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.4.19",
+    "morgan": "^1.7.0",
+    "mssql": "^3.3.0"
+  }
+}
