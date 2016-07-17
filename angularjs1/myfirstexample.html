@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./node_modules/angular/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="myapp" ng-init="countries =[{locale:'en-US',name:'United State'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]">
+        <p>Enter your name : <input type="text" ng-model="name"> </p>
+        <p>Hello <span ng-bind="name"></span>!</p>
+        <p>List of Countries</p>
+        <ol>
+            <li ng-repeat="country in countries">
+                {{'Country :' + country.name + ', Locale :' + country.locale }}
+            </li>
+        </ol>
+
+        <div ng-controller="studentController">
+            <p>Enter first name <input type="text" ng-model="student.firstname"></p>
+            <p>Enter last name <input type="text" ng-model="student.lastname"></p>
+            <p>You are entring {{student.fullname()}} </p>
+        </div>
+    </div>
+    <script>
+       var myApp= angular.module("myapp",[]);
+       myApp.controller("studentController", function ($scope){
+        
+        $scope.student ={
+            firstname:'Jaylem',
+            lastname:'Chaudhari',
+            fullname :function (){
+                var studentObject =$scope.student;
+                return studentObject.firstname + ' ' + studentObject.lastname;
+            } 
+        };
+    });
+</script>
+</body>
+
+</html>
