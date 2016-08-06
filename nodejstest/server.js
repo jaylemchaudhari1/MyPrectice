@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 // Create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
+
+
 app.use(express.static('public'));
 
 app.get('/index.htm', function (req, res) {
